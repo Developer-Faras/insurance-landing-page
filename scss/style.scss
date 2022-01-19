@@ -13,9 +13,15 @@
     left: 0;
     right: 0;
     z-index: 9999;
+    transition: all 0.3s ease;
 
     &.active{
-        background: rgba(0, 0, 0, 0.534);
+        background: rgba(37, 43, 66, 0.9);
+        height: 70px;
+    }
+
+    .container{
+        height: 100%;
     }
 
     .content{
@@ -114,6 +120,11 @@
                         i{
                             padding-left: 8px;
                         }
+                    }
+
+                    &.mobile{
+                        font-size: 18px;
+                        display: none;
                     }
                 }
             }
@@ -428,7 +439,7 @@
 
         .card{
             display: block;
-            height: 600px;
+            height: auto;
             background: #ffffff;
             border-radius: 5px;
             width: 32%;
@@ -625,3 +636,181 @@
         }
     }
 }
+
+
+// Newsletter
+#newsletter{
+    display: block;
+    width: 100%;
+    height: 140px;
+    background: #fafafa;
+
+    .container{
+        height: 100%;
+
+        .content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .left{
+                .title{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0.1px;
+                    font-family: $font-montserrat;
+                    color: $color-background;
+                    padding-bottom: 6px;
+                }
+
+                .dec{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: $font-montserrat;
+                    color: $text-color-second;
+                }
+            }
+
+            .right{
+                .contact-btn{
+                    display: inline-block;
+                    padding: 15px 40px;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-family: $font-montserrat;
+                    background: $color-primary;
+                    color: $color-white;
+                    transition: all 0.3s ease;
+                    border: 2px solid $color-primary;
+                    border-radius: 5px;
+
+                    &:hover{
+                        color: $color-primary;
+                        background: $color-white;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// Footer
+#footer{
+    display: block;
+    width: 100%;
+    background: $color-background;
+    
+    .content{
+        padding: 30px 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .item{
+            .list{
+                list-style: none;
+
+                li{
+                    padding: 5px 0;
+                    display: flex;
+                    align-items: center;
+
+                    a{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $color-white;
+                        font-family: $font-montserrat;
+                        text-decoration: none;
+                        transition: all 0.2s ease;
+
+                        &:hover{
+                            color: $color-primary;
+                        }
+
+                        &.list-title{
+                            font-size: 16px;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: inline-block;
+
+                            &:hover{
+                                color: $color-white;
+                            }
+                        }
+
+                        i{
+                            font-size: 20px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Copyright
+#copyright{
+    display: block;
+    width: 100%;
+    height: 100%;
+    // background: $color-gold;
+
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 74px;
+
+        .copy-text{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            font-family: $font-montserrat;
+            color: $text-color-second;
+
+            a{
+                font-size: 15px;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                color: $text-color-second;
+                font-weight: 800;
+
+                &:hover{
+                    color: $color-primary;
+                }
+            }
+        }
+
+        .sosial{
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            li{
+                padding: 0 12px;
+
+                a{
+                    font-size: 22px;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@import "responsive";

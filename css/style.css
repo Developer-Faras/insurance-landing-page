@@ -20,14 +20,13 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-bottom: 300px;
 }
 
 .container {
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 1050px;
+  max-width: 1100px;
 }
 
 section.padd {
@@ -35,7 +34,7 @@ section.padd {
 }
 
 section.padd-2 {
-  padding: 60px;
+  padding: 60px 0;
 }
 
 section .section-header {
@@ -75,10 +74,17 @@ section .section-header .dec {
   left: 0;
   right: 0;
   z-index: 9999;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #main-header.active {
-  background: rgba(0, 0, 0, 0.534);
+  background: rgba(37, 43, 66, 0.9);
+  height: 70px;
+}
+
+#main-header .container {
+  height: 100%;
 }
 
 #main-header .content {
@@ -212,6 +218,11 @@ section .section-header .dec {
 
 #main-header .content .btns li a.become-btn i {
   padding-left: 8px;
+}
+
+#main-header .content .btns li a.mobile {
+  font-size: 18px;
+  display: none;
 }
 
 #hero {
@@ -563,7 +574,7 @@ section .section-header .dec {
 
 #price .content .card {
   display: block;
-  height: 600px;
+  height: auto;
   background: #ffffff;
   border-radius: 5px;
   width: 32%;
@@ -772,5 +783,644 @@ section .section-header .dec {
 #contact .content .form-wraper form .input-group .input-wraper .submit-btn:hover {
   background: #ffffff;
   color: #23A6F0;
+}
+
+#newsletter {
+  display: block;
+  width: 100%;
+  height: 140px;
+  background: #fafafa;
+}
+
+#newsletter .container {
+  height: 100%;
+}
+
+#newsletter .container .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#newsletter .container .content .left .title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  font-family: "Montserrat", sans-serif;
+  color: #252B42;
+  padding-bottom: 6px;
+}
+
+#newsletter .container .content .left .dec {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+}
+
+#newsletter .container .content .right .contact-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  background: #23A6F0;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid #23A6F0;
+  border-radius: 5px;
+}
+
+#newsletter .container .content .right .contact-btn:hover {
+  color: #23A6F0;
+  background: #ffffff;
+}
+
+#footer {
+  display: block;
+  width: 100%;
+  background: #252B42;
+}
+
+#footer .content {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer .content .item .list {
+  list-style: none;
+}
+
+#footer .content .item .list li {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .content .item .list li a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#footer .content .item .list li a:hover {
+  color: #23A6F0;
+}
+
+#footer .content .item .list li a.list-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#footer .content .item .list li a.list-title:hover {
+  color: #ffffff;
+}
+
+#footer .content .item .list li a i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+#copyright {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#copyright .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 74px;
+}
+
+#copyright .content .copy-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+}
+
+#copyright .content .copy-text a {
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #737373;
+  font-weight: 800;
+}
+
+#copyright .content .copy-text a:hover {
+  color: #23A6F0;
+}
+
+#copyright .content .sosial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+#copyright .content .sosial li {
+  padding: 0 12px;
+}
+
+#copyright .content .sosial li a {
+  font-size: 22px;
+  color: #23A6F0;
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .container {
+    width: 920px;
+  }
+  #portfolio .content .card {
+    width: 220px;
+  }
+  #testimonial .content .card img {
+    top: 17px;
+    right: 20px;
+    left: auto;
+  }
+  #contact {
+    background-position: top right;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  section.padd {
+    padding: 50px 0;
+  }
+  section.padd-2 {
+    padding: 36px 0;
+  }
+  section .section-header .title {
+    font-size: 36px;
+  }
+  #main-header .content .left {
+    width: 90%;
+  }
+  #main-header .content .btns {
+    width: 10%;
+    display: block;
+    text-align: right;
+  }
+  #main-header .content .btns li a.become-btn {
+    display: none;
+  }
+  #hero {
+    height: 560px;
+  }
+  #hero .content .title {
+    font-size: 44px;
+    line-height: 58px;
+  }
+  #hero .content .dec {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #hero .content .btns {
+    margin-top: 30px;
+  }
+  #hero .content .btns li a {
+    font-size: 13px;
+    padding: 14px 26px;
+  }
+  #chose .content .card {
+    padding: 0 20px;
+  }
+  #testimonial .content .card {
+    width: 350px;
+    height: auto;
+  }
+  #testimonial .content .card img {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: auto;
+    right: 20px;
+  }
+  #portfolio .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #portfolio .content .card {
+    width: 320px;
+    margin-bottom: 50px;
+  }
+  #portfolio .content .card:nth-child(3) {
+    margin-bottom: 0;
+  }
+  #portfolio .content .card:nth-child(4) {
+    margin-bottom: 0;
+  }
+  #price .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #price .content .card {
+    height: auto;
+    padding: 20px 30px;
+    width: 340px;
+  }
+  #price .content .card:nth-child(1) {
+    margin-right: 14px;
+    margin-bottom: 20px;
+  }
+  #price .content .card:nth-child(2) {
+    margin-left: 14px;
+    margin-bottom: 20px;
+  }
+  #price .content .card .name {
+    font-size: 22px;
+  }
+  #price .content .card .dec {
+    width: 100%;
+    font-size: 15px;
+  }
+  #contact {
+    height: 550px;
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 550px;
+  }
+  #contact .content .form-wraper {
+    width: 660px;
+    margin: auto;
+  }
+  #footer .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #footer .content .item {
+    width: auto;
+  }
+  #footer .content .item:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 400px;
+  }
+  section.padd {
+    padding: 60px 0;
+  }
+  section.padd-2 {
+    padding: 36px 0;
+  }
+  section .section-header {
+    width: 100%;
+  }
+  section .section-header .title {
+    font-size: 32px;
+    width: 100%;
+  }
+  section .section-header .dec {
+    font-size: 13px;
+    width: 100%;
+  }
+  #main-header {
+    z-index: 9999;
+  }
+  #main-header .content {
+    position: relative;
+  }
+  #main-header .content .left .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(37, 43, 66, 0.9);
+    height: 0px;
+    padding: 0px;
+    -webkit-transition: all 0.5s cubic-bezier(0.61, -0.75, 0, 2.1);
+    transition: all 0.5s cubic-bezier(0.61, -0.75, 0, 2.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  #main-header .content .left .menu.mobile-show {
+    top: 100%;
+    padding: 20px 0;
+    height: 220px;
+  }
+  #main-header .content .left .menu li {
+    padding: 10px 0px;
+  }
+  #main-header .content .left .menu li a {
+    display: block;
+    padding: 3px 0;
+    font-size: 16px;
+  }
+  #main-header .content .btns li a.become-btn, #main-header .content .btns li a.login-btn {
+    display: none;
+  }
+  #main-header .content .btns li a.mobile {
+    display: block;
+    margin: 0 2px;
+    font-size: 20px;
+  }
+  #hero {
+    height: auto;
+    padding: 120px 0;
+  }
+  #hero .content {
+    width: 100%;
+    height: auto;
+  }
+  #hero .content .title {
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+  }
+  #hero .content .dec {
+    font-size: 15px;
+    text-align: center;
+    line-height: 26px;
+    padding: 22px 0;
+  }
+  #hero .content .btns {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  #hero .content .btns li {
+    margin: 0;
+  }
+  #hero .content .btns li:nth-child(1) {
+    margin-right: 10px;
+  }
+  #hero .content .btns li:nth-child(2) {
+    margin-left: 10px;
+  }
+  #chose .content {
+    display: block;
+  }
+  #chose .content .card {
+    padding: 0px 70px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  #chose .content .card:last-child {
+    margin-bottom: 0px;
+  }
+  #testimonial .content {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #testimonial .content .card {
+    display: block;
+    margin-bottom: 30px;
+    height: auto;
+  }
+  #testimonial .content .card:last-child {
+    margin-bottom: 0;
+  }
+  #testimonial .content .card .card-img {
+    display: none;
+  }
+  #portfolio .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #portfolio .content .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  #portfolio .content .card:last-child {
+    margin-bottom: 0px;
+  }
+  #price .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 44px;
+  }
+  #price .content .card {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 26px;
+    height: auto;
+  }
+  #price .content .card:last-child {
+    margin-bottom: 0;
+  }
+  #contact {
+    height: auto;
+  }
+  #contact .section-header {
+    text-align: center;
+  }
+  #contact .content .form-wraper {
+    width: 100%;
+  }
+  #contact .content .form-wraper form .input-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  #contact .content .form-wraper form .input-group .input-wraper {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  #contact .content .form-wraper form .input-group .input-wraper.half {
+    width: 100%;
+  }
+  #contact .content .form-wraper form .input-group .input-wraper .submit-btn {
+    display: block;
+    width: 100%;
+  }
+  #newsletter {
+    padding: 30px 0;
+    display: block;
+    height: auto;
+  }
+  #newsletter .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #newsletter .content .left {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  #newsletter .content .left .title {
+    padding-bottom: 8px;
+  }
+  #newsletter .content .right {
+    margin: auto;
+  }
+  #footer .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #footer .content .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #footer .content .item:last-child {
+    margin-bottom: 0;
+  }
+  #footer .content .item .list li {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .content .item .list li a.list-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+  #copyright {
+    background: #252B42;
+    height: auto;
+  }
+  #copyright .content {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    height: 100%;
+  }
+  #copyright .content .sosial {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  #copyright .content .copy-text {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 424px) and (min-width: 300px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  #hero {
+    padding: 90px 0;
+  }
+  #hero .content .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  #hero .content .dec {
+    font-size: 12px;
+    line-height: 21px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #hero .content .btns {
+    text-align: center;
+    display: block;
+    margin-top: 24px;
+  }
+  #hero .content .btns li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #hero .content .btns li:nth-child(1) {
+    margin-right: 0;
+  }
+  #hero .content .btns li:nth-child(2) {
+    margin-left: 0;
+  }
+  #hero .content .btns li a {
+    padding: 12px 30px;
+    font-size: 12px;
+    display: inline-block;
+  }
+  #portfolio .content .card {
+    width: 100%;
+  }
+  #price .content .card {
+    width: 100%;
+  }
+  #contact {
+    padding-bottom: 0px;
+  }
+  #newsletter {
+    padding-top: 0;
+  }
+  #copyright {
+    margin-top: -2px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
