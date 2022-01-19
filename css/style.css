@@ -20,6 +20,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-bottom: 300px;
 }
 
 .container {
@@ -113,6 +114,12 @@ section .section-header .dec {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#main-header .content .left .logo:hover {
+  color: #23A6F0;
 }
 
 #main-header .content .left .menu {
@@ -137,6 +144,12 @@ section .section-header .dec {
   font-weight: 600;
   color: #ffffff;
   font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#main-header .content .left .menu li a:hover {
+  color: #23A6F0;
 }
 
 #main-header .content .btns {
@@ -165,6 +178,12 @@ section .section-header .dec {
   font-weight: 600;
   color: #ffffff;
   font-size: 14px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#main-header .content .btns li a:hover {
+  color: #23A6F0;
 }
 
 #main-header .content .btns li a.become-btn {
@@ -182,6 +201,13 @@ section .section-header .dec {
   background: #23A6F0;
   border-radius: 5px;
   margin-left: 6px;
+  border: 2px solid #23A6F0;
+}
+
+#main-header .content .btns li a.become-btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: transparent;
 }
 
 #main-header .content .btns li a.become-btn i {
@@ -436,6 +462,7 @@ section .section-header .dec {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 
 #portfolio .content .card {
@@ -513,5 +540,237 @@ section .section-header .dec {
   line-height: 22px;
   letter-spacing: 0.2px;
   font-weight: 700;
+}
+
+#price {
+  display: block;
+  width: 100%;
+  background: #252B42;
+}
+
+#price .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+#price .content .card {
+  display: block;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 32%;
+  padding: 30px 30px;
+  position: relative;
+}
+
+#price .content .card .name {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #252B42;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0;
+  margin-bottom: 14px;
+}
+
+#price .content .card .dec {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #737373;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#price .content .card .pric {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #23A6F0;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  display: block;
+  text-align: center;
+}
+
+#price .content .card .price-time {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #23A6F0;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#price .content .card .try-btn {
+  padding: 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background: #23A6F0;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 2px solid #23A6F0;
+}
+
+#price .content .card .try-btn:hover {
+  background: #ffffff;
+  color: #23A6F0;
+}
+
+#price .content .card .list {
+  list-style: none;
+  display: block;
+}
+
+#price .content .card .list li {
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#price .content .card .list li i {
+  font-size: 26px;
+  padding-right: 8px;
+  color: #BDBDBD;
+}
+
+#price .content .card .list li span {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #252B42;
+}
+
+#price .content .card .list li.active i {
+  color: #2DC071;
+}
+
+#contact {
+  display: block;
+  width: 100%;
+  background: url(./../images/contact.jpg);
+  height: 650px;
+  background-size: cover;
+}
+
+#contact .section-header {
+  width: 100%;
+  text-align: left;
+}
+
+#contact .section-header .title {
+  color: #252B42;
+}
+
+#contact .section-header .dec {
+  color: #252B42;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#contact .content {
+  padding: 20px 0;
+}
+
+#contact .content .form-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+}
+
+#contact .content .form-wraper form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8px 0;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper {
+  width: 100%;
+  display: block;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper.half {
+  width: 48%;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper :is(input, select, textarea) {
+  width: 100%;
+  height: 50px;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+  padding: 0 15px;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper textarea {
+  height: 150px;
+  padding: 15px;
+  resize: none;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper .submit-btn {
+  width: 220px;
+  background: #23A6F0;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #23A6F0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#contact .content .form-wraper form .input-group .input-wraper .submit-btn:hover {
+  background: #ffffff;
+  color: #23A6F0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,11 @@
                 font-weight: 700;
                 font-family: $font-montserrat;
                 color: $color-white;
+                transition: all 0.2s ease;
+
+                &:hover{
+                    color: $color-primary;
+                }
             }
 
             .menu{
@@ -55,6 +60,11 @@
                         font-weight: 600;
                         color: $color-white;
                         font-size: 14px;
+                        transition: all 0.2s ease;
+
+                        &:hover{
+                            color: $color-primary;
+                        }
                     }
                 }
             }
@@ -78,6 +88,11 @@
                     font-weight: 600;
                     color: $color-white;
                     font-size: 14px;
+                    transition: all 0.2s ease;
+
+                    &:hover{
+                        color: $color-primary;
+                    }
 
                     &.become-btn{
                         width: 200px;
@@ -88,6 +103,13 @@
                         background: $color-primary;
                         border-radius: 5px;
                         margin-left: 6px;
+                        border: 2px solid $color-primary;
+
+                        &:hover{
+                            color: $color-white;
+                            border-color: $color-white;
+                            background: transparent;
+                        }
 
                         i{
                             padding-left: 8px;
@@ -317,6 +339,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 30px;
 
         .card{
             height: 380px;
@@ -385,6 +408,219 @@
                     letter-spacing: 0.2px;
                     font-weight: 700;
                 }
+            }
+        }
+    }
+}
+
+
+// Priching
+#price{
+    display: block;
+    width: 100%;
+    background: $color-background;
+
+    .content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        .card{
+            display: block;
+            height: 600px;
+            background: #ffffff;
+            border-radius: 5px;
+            width: 32%;
+            padding: 30px 30px;
+            position: relative;
+
+            .name{
+                display: block;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                color: $color-background;
+                font-family: $font-montserrat;
+                padding: 10px 0;
+                margin-bottom: 14px;
+            }
+
+            .dec{
+                font-size: 16px;
+                font-weight: 700;
+                font-family: $font-montserrat;
+                color: $text-color-second;
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .pric{
+                font-size: 40px;
+                font-family: $font-montserrat;
+                color: $color-primary;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+                display: block;
+                text-align: center;
+            }
+            .price-time{
+                font-size: 16px;
+                line-height: 27px;
+                letter-spacing: 0.2px;
+                font-family: $font-montserrat;
+                font-weight: 700;
+                color: $color-primary;
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .try-btn{
+                padding: 15px 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                background: $color-primary;
+                border-radius: 3px;
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 700;
+                text-decoration: none;
+                color: $color-white;
+                letter-spacing: 0.2px;
+                font-family: $font-montserrat;
+                margin-bottom: 30px;
+                transition: all 0.3s ease;
+                border: 2px solid $color-primary;
+
+                &:hover{
+                    background: $color-white;
+                    color: $color-primary;
+                }
+            }
+            
+            .list{
+                list-style: none;
+                display: block;
+
+                li{
+                    padding: 8px 0;
+                    display: flex;
+                    align-items: center;
+
+                    i{
+                        font-size: 26px;
+                        padding-right: 8px;
+                        color: $muted-color;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        font-weight: 600;
+                        font-family: $font-montserrat;
+                        color: $color-background;
+                    }
+
+                    &.active{
+                        i{
+                            color: $success-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Contact
+#contact{
+    display: block;
+    width: 100%;
+    background: url(./../images/contact.jpg);
+    height: 650px;
+    background-size: cover;
+
+
+    .section-header{
+        width: 100%;
+        text-align: left;
+
+        .title{
+            color: $color-background;
+        }
+        .dec{
+            color: $color-background;
+            font-weight: 700;
+            font-size: 16px;
+        }
+    }
+
+    .content{
+        padding: 20px 0;
+        
+
+        .form-wraper{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+
+            form{
+                
+                .input-group{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    padding: 8px 0;
+
+                    .input-wraper{
+                        width: 100%;
+                        display: block;
+
+                        &.half{
+                            width: 48%;
+                        }
+
+                        :is(input, select, textarea){
+                            width: 100%;
+                            height: 50px;
+                            background: #f9f9f9;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $text-color-second;
+                            padding: 0 15px;
+
+
+                        }
+
+                        textarea{
+                            height: 150px;
+                            padding: 15px;
+                            resize: none;
+                        }
+
+                        .submit-btn{
+                            width: 220px;
+                            background: $color-primary;
+                            color: #fff;
+                            cursor: pointer;
+                            border: 2px solid $color-primary;
+                            transition: all 0.3s ease;
+
+                            &:hover{
+                                background: $color-white;
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+
             }
         }
     }
