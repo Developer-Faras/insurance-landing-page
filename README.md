@@ -1,7 +1,7 @@
 ![Screenshot](./images/readme/cover.png)
 
 <br />
-<h1 style="text-align:center; border: none;">Vpn Landing Page</h1>
+<h1 style="text-align:center; border: none;">Insurance Landing Page</h1>
 
 <br />
 
